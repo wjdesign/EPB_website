@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link rel="stylesheet" href="css/all.min.css?ver20200516_21">
+    <link rel="stylesheet" href="css/bootstrap.min.css?ver20200516_21">
+    <link rel="stylesheet" href="css/common.css?ver20200516_21">
+    <link rel="stylesheet" href="css/main.css?ver20200516_21">
+    <link rel="stylesheet" href="css/rwd.css?ver20200516_21">
+
+    <script>
+        var Version = '?ver20200516_21';   // 版本號
+    </script>
+
+    <script src="js/jquery-3.3.1.min.js?ver20200516_21"></script>
+    <script src="js/bootstrap.min.js?ver20200516_21"></script>
+    <script src="js/angular.min.js?ver20200516_21"></script>
+    <script src="js/angular/angular-ui-router.js?ver20200516_21"></script>
+    <script src="js/ui-bootstrap-tpls-2.0.0.min.js?ver20200516_21"></script>
+
+    <script src="js/angular/config.js?ver20200516_21"></script>
+    <script src="js/angular/app.js?ver20200516_21"></script>
+
+    <!--controller-->
+    <script src="js/angular/controller/main.js?ver20200516_21"></script>
+    <script src="js/angular/controller/home.js?ver20200516_21"></script>
+    <script src="js/angular/controller/about.js?ver20200516_21"></script>
+
+    <title>台中市政府環境保護局環保志工網</title>
+</head>
+<body ng-app="mainApp" ng-init="Loading = true" ng-controller="mainCtrl">
+    <div ng-if="(Loading)" class="Loading">
+        <div class="lds-roller"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>
+    </div>
+    <header id="WebHeader">
+        <div class="container">
+            <div class="clearfix HeaderWrapper">
+                <div class="LogoWrapper">
+                    <a ui-sref="home" class="Logo" title="環保局志工網Logo"></a>
+                </div>
+                <div class="MenuWrapper">
+                    <ul>
+                        <li ui-sref-active="{'active':'home'}">
+                            <a ui-sref="home"><i class="fas fa-home"></i>首頁</a>
+                        </li>
+                        <li ui-sref-active="{'active':'about'}">
+                            <a ui-sref="about"><i class="fab fa-affiliatetheme"></i>關於我們</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+    <header id="MobileHeader">
+        <div class="clearfix MobileHeaderWrapper">
+            <div class="LogoWrapper">
+                <a ui-sref="home" class="Logo" close-collapse title="環保局志工網Logo"></a>
+            </div>
+            <button class="navbar-toggler ShowMenu" type="button" data-toggle="collapse" data-target="#MobileMenu">
+                <div class="animated-icon"><span></span><span></span><span></span></div>
+            </button>
+            <div class="collapse MenuWrapper" id="MobileMenu">
+                <ul>
+                    <li ui-sref-active="active">
+                        <a close-collapse ui-sref="home"><i class="glyphicon glyphicon-star"></i>home</a>
+                    </li>
+                    <li ui-sref-active="active">
+                        <a close-collapse ui-sref="about"><i class="glyphicon glyphicon-star"></i>about</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <div class="BodyWrapper">
+        <div ui-view></div>
+    </div>
+    <footer>copyright @ WJDesign [{CopyrightYear}]</footer>
+</body>
+</html>
