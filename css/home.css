@@ -1,0 +1,87 @@
+/*首頁*/
+/*輪播廣告*/
+.Carousel {
+    position: relative;
+}
+.Carousel img {
+    width: 100%;
+}
+.Carousel .slick-arrow {
+    position: absolute;
+    top: 45%;
+    width: 40px;
+    height: 40px;
+    margin-top: -15px;
+    background: rgba(255, 255, 255, .3);
+    border: 0;
+    border-radius: .2rem;
+    color: #fff;
+    font-size: 2rem;
+    line-height: 2rem;
+    transition: .3s;
+    opacity: .4;
+}
+.Carousel .prev {
+    left: 1rem;
+}
+.Carousel .next {
+    right: 1rem;
+}
+.Carousel:hover .slick-arrow {
+    opacity: .6;
+}
+.Carousel .slick-arrow:hover {
+    opacity: 1;
+}
+.Carousel .slick-dots li button:before {
+    font-size: 2rem;
+}
+
+/*熱門列表*/
+.no-gutters .NewsList {
+    padding-left: 15px;
+}
+.NewsList .NewsListTabs {
+    display: flex;
+}
+.NewsList .NewsListTabs li {
+    display: flex;
+    flex: 1;
+}
+.NewsList .NewsListTabs li a {
+    flex: 1;
+    text-align: center;
+    padding: .5rem 0;
+    background: #333;
+    border-radius: 0;
+    color: #fff;
+}
+.NewsList .NewsListTabs li a:hover {
+    border-color: #333 #666 #333;
+}
+.NewsList .NewsListTabs li a.active {
+    color: #fff;
+    background-color: #248577;
+    border-color: #1e7b6e #1e7b6e #1e7b6e;
+}
+.NewsList .NewsListContent table tr:hover {
+    background-color: rgba(255, 243, 156, .3);
+}
+.NewsList .NewsListContent table tr td {
+    font-size: .9rem;
+    vertical-align: middle;
+}
+.NewsList .NewsListContent table tr td a {
+    text-decoration: none;
+    color: #333;
+    transition: color .2s;
+}
+.NewsList .NewsListContent table tr:hover td a {
+    color: #f66201;
+}
+.NewsList .NewsListContent table tr .date {
+    color: #de1414;
+    font-weight: bold;
+    font-size: .7rem;
+    text-align: right;
+}

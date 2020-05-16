@@ -28,8 +28,8 @@
         return function(scope, element, attrs) {
             link: {
                 element.bind('click',function(){
-                    $(".collapse.show").collapse("hide");
-                    $('.animated-icon').removeClass('open');
+                    $(".ShowMenu").trigger("click");
+                    $(".menu-overlay").fadeOut(500);
                 })
             }
         }

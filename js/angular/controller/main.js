@@ -24,6 +24,16 @@
         // Mobile版漢堡盒動畫
         angular.element(".ShowMenu").on("click", function () {
             $('.animated-icon').stop().toggleClass('open');
+            var navMenuCont = $($(this).data('target'));
+            navMenuCont.animate({
+                'width': 'toggle'
+            }, 350);
+            $(".menu-overlay").fadeToggle(500);
+        });
+
+        angular.element(".menu-overlay").on("click", function () {
+            $(".ShowMenu").trigger("click");
+            $(".menu-overlay").fadeOut(500);
         });
 
         // Init

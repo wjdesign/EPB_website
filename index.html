@@ -2,33 +2,46 @@
 <html lang="zh">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta http-equiv="PRAGMA" content="NO-CACHE">
+    <!-- IE可能不見得有效 -->
+    <meta http-equiv="EXPIRES" content="0">
+    <!-- 設定成馬上就過期 -->
+    <meta http-equiv="CACHE-CONTROL" content="NO-CACHE">
 
-    <link rel="stylesheet" href="css/all.min.css?ver20200516_21">
-    <link rel="stylesheet" href="css/bootstrap.min.css?ver20200516_21">
-    <link rel="stylesheet" href="css/common.css?ver20200516_21">
-    <link rel="stylesheet" href="css/main.css?ver20200516_21">
-    <link rel="stylesheet" href="css/rwd.css?ver20200516_21">
+    <link rel="shortcut icon" href="images/favicon.ico"/>
+    <link rel="bookmark" href="images/favicon.ico"/>
+
+    <link rel="stylesheet" href="css/all.min.css?ver20200516_51">
+    <link rel="stylesheet" href="css/bootstrap.min.css?ver20200516_51">
+    <link rel="stylesheet" href="css/slick.css?ver20200516_51">
+    <link rel="stylesheet" href="css/slick-theme.css?ver20200516_51">
+    <link rel="stylesheet" href="css/common.css?ver20200516_51">
+    <link rel="stylesheet" href="css/main.css?ver20200516_51">
+    <link rel="stylesheet" href="css/home.css?ver20200516_51">
+    <link rel="stylesheet" href="css/rwd.css?ver20200516_51">
 
     <script>
-        var Version = '?ver20200516_21';   // 版本號
+        var Version = '?ver20200516_51';   // 版本號
     </script>
 
-    <script src="js/jquery-3.3.1.min.js?ver20200516_21"></script>
-    <script src="js/bootstrap.min.js?ver20200516_21"></script>
-    <script src="js/angular.min.js?ver20200516_21"></script>
-    <script src="js/angular/angular-ui-router.js?ver20200516_21"></script>
-    <script src="js/ui-bootstrap-tpls-2.0.0.min.js?ver20200516_21"></script>
+    <script src="js/jquery-3.3.1.min.js?ver20200516_51"></script>
+    <script src="js/bootstrap.min.js?ver20200516_51"></script>
+    <script src="js/angular.min.js?ver20200516_51"></script>
+    <script src="js/angular/angular-ui-router.js?ver20200516_51"></script>
+    <script src="js/ui-bootstrap-tpls-2.0.0.min.js?ver20200516_51"></script>
+    <script src="js/slick.js?ver20200516_51"></script>
 
-    <script src="js/angular/config.js?ver20200516_21"></script>
-    <script src="js/angular/app.js?ver20200516_21"></script>
+    <script src="js/angular/config.js?ver20200516_51"></script>
+    <script src="js/angular/app.js?ver20200516_51"></script>
 
     <!--controller-->
-    <script src="js/angular/controller/main.js?ver20200516_21"></script>
-    <script src="js/angular/controller/home.js?ver20200516_21"></script>
-    <script src="js/angular/controller/about.js?ver20200516_21"></script>
+    <script src="js/angular/controller/main.js?ver20200516_51"></script>
+    <script src="js/angular/controller/home.js?ver20200516_51"></script>
+    <script src="js/angular/controller/about.js?ver20200516_51"></script>
+
+    <script src="js/data.js?ver20200516_51"></script>
 
     <title>台中市政府環境保護局環保志工網</title>
 </head>
@@ -60,19 +73,21 @@
             <div class="LogoWrapper">
                 <a ui-sref="home" class="Logo" close-collapse title="環保局志工網Logo"></a>
             </div>
-            <button class="navbar-toggler ShowMenu" type="button" data-toggle="collapse" data-target="#MobileMenu">
+            <button class="navbar-toggle collapsed ShowMenu" type="button" data-toggle="slide-collapse" data-target="#MobileMenu" aria-expanded="false">
                 <div class="animated-icon"><span></span><span></span><span></span></div>
             </button>
-            <div class="collapse MenuWrapper" id="MobileMenu">
+            <div class="collapse navbar-collapse MenuWrapper" id="MobileMenu">
+                <h6>網頁導覽</h6>
                 <ul>
                     <li ui-sref-active="active">
-                        <a close-collapse ui-sref="home"><i class="glyphicon glyphicon-star"></i>home</a>
+                        <a close-collapse ui-sref="home"><i class="fas fa-home"></i>首頁</a>
                     </li>
                     <li ui-sref-active="active">
-                        <a close-collapse ui-sref="about"><i class="glyphicon glyphicon-star"></i>about</a>
+                        <a close-collapse ui-sref="about"><i class="fab fa-affiliatetheme"></i>關於我們</a>
                     </li>
                 </ul>
             </div>
+            <div class="menu-overlay"></div>
         </div>
     </header>
     <div class="BodyWrapper">

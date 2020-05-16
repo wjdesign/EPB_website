@@ -27,6 +27,7 @@
     }
 }
 @media (max-width: 768px) {
+    /*main*/
     #WebHeader {
         display: none;
     }
@@ -39,7 +40,31 @@
         z-index: 7;
         background: rgba(255, 255, 255, .9);
     }
-    .BodyWrapper {
-        padding-top: 90px;
+    #MobileHeader .MobileHeaderWrapper .MenuWrapper {
+        position: fixed;
+        top: 0;
+        right: 0;
+        z-index: 50;
+        width: 300px;
+        height: 100%;
+        background: #248577;
+        overflow: auto;
+    }
+    #MobileHeader .menu-overlay {
+        display: none;
+        background-color: #000;
+        bottom: 0;
+        left: 0;
+        opacity: 0.5;
+        filter: alpha(opacity=50);
+        /* IE7 & 8 */
+        position: fixed;
+        right: 0;
+        top: 0;
+        z-index: 49;
+    }
+    /*home*/
+    .no-gutters .NewsList {
+        padding-left: 0;
     }
 }

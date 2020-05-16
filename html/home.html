@@ -1,4 +1,67 @@
 <!--首頁-->
-<div id="homePage" class="container">
-    home
+<div id="homePage" class="container page-container">
+    <div class="row no-gutters">
+        <div class="col-sm-12 col-md-6 Carousel">
+            <div id="Banner">
+                <div class="col-xs-4 audioContent">
+                    <img class="img-fluid img-thumbnail" src="/EPB_website/images/banner/01.jpg" alt="">
+                </div>
+                <div class="col-xs-4 audioContent">
+                    <img class="img-fluid img-thumbnail" src="/EPB_website/images/banner/01.jpg" alt="">
+                </div>
+                <div class="col-xs-4 audioContent">
+                    <img class="img-fluid img-thumbnail" src="/EPB_website/images/banner/01.jpg" alt="">
+                </div>
+            </div>
+            <button class="prev"><i class="fas fa-chevron-left"></i></button>
+            <button class="next"><i class="fas fa-chevron-right"></i></button>
+        </div>
+        <div class="col-sm-12 col-md-6 NewsList">
+            <ul class="nav nav-tabs NewsListTabs" id="NewTab" role="tablist">
+                <li class="nav-item">
+                    <a class="nav-link active" id="news-tab" data-toggle="tab" href="#news" role="tab" aria-controls="news" aria-selected="true">最新消息</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="qa-tab" data-toggle="tab" href="#qa" role="tab" aria-controls="qa" aria-selected="false">常見問答</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="rule-tab" data-toggle="tab" href="#rule" role="tab" aria-controls="rule" aria-selected="false">相關法規</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="download-tab" data-toggle="tab" href="#download" role="tab" aria-controls="download" aria-selected="false">資料下載</a>
+                </li>
+            </ul>
+            <div class="tab-content NewsListContent" id="NewTabContent">
+                <div class="tab-pane fade show active" id="news" role="tabpanel" aria-labelledby="news-tab">
+                    <table class="table table-hover">
+                        <tbody>
+                            <tr ng-repeat="news in NewsList['news'] | limitTo: 5">
+                                <td class="title">
+                                    <a ng-href="[{news.url}]">[{news.title}]</a>
+                                </td>
+                                <td class="date">[{news.date}]</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="tab-pane fade" id="qa" role="tabpanel" aria-labelledby="qa-tab">
+                    <table class="table table-hover">
+                        <tbody>
+                        <tr ng-repeat="news in NewsList['qa'] | limitTo: 5">
+                            <td class="title">
+                                <a ng-href="[{news.url}]">[{news.title}]</a>
+                            </td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="tab-pane fade" id="rule" role="tabpanel" aria-labelledby="rule-tab">
+                    CCC
+                </div>
+                <div class="tab-pane fade" id="download" role="tabpanel" aria-labelledby="download-tab">
+                    DDD
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
