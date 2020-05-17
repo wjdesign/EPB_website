@@ -1,5 +1,11 @@
 <!--首頁-->
-<div id="homePage" class="container page-container">
+<div class="Marquee">
+    <div class="container d-flex align-items-center">
+        <i class="px-3 fas fa-volume-up"></i>
+        <marquee behavior="" direction="">歡迎來到環保局網站，網站目前維護中，造成您的不便請見諒。</marquee>
+    </div>
+</div>
+<div id="HomePage" class="container pt-4">
     <div class="row no-gutters">
         <div class="col-sm-12 col-md-6 Carousel">
             <div id="Banner">
@@ -32,36 +38,90 @@
                 </li>
             </ul>
             <div class="tab-content NewsListContent" id="NewTabContent">
+                <!--最新消息-->
                 <div class="tab-pane fade show active" id="news" role="tabpanel" aria-labelledby="news-tab">
                     <table class="table table-hover">
                         <tbody>
-                            <tr ng-repeat="news in NewsList['news'] | limitTo: 5">
+                            <tr ng-repeat="news in Data['news'] | limitTo: 5">
                                 <td class="title">
-                                    <a ng-href="[{news.url}]">[{news.title}]</a>
+                                    <a ng-href="[{news.url}]">
+                                        <i class="fas fa-caret-square-right mr-1"></i>
+                                        [{news.title}]
+                                    </a>
                                 </td>
                                 <td class="date">[{news.date}]</td>
                             </tr>
                         </tbody>
                     </table>
                 </div>
+                <!--常見問答-->
                 <div class="tab-pane fade" id="qa" role="tabpanel" aria-labelledby="qa-tab">
                     <table class="table table-hover">
                         <tbody>
-                        <tr ng-repeat="news in NewsList['qa'] | limitTo: 5">
-                            <td class="title">
-                                <a ng-href="[{news.url}]">[{news.title}]</a>
-                            </td>
-                        </tr>
+                            <tr ng-repeat="news in Data['qa'] | limitTo: 5">
+                                <td class="title">
+                                    <a ng-href="[{news.url}]">
+                                        <i class="fas fa-caret-square-right mr-1"></i>
+                                        [{news.title}]
+                                    </a>
+                                </td>
+                            </tr>
                         </tbody>
                     </table>
                 </div>
+                <!--相關法規-->
                 <div class="tab-pane fade" id="rule" role="tabpanel" aria-labelledby="rule-tab">
-                    CCC
+                    <table class="table table-hover">
+                        <tbody>
+                            <tr ng-repeat="news in Data['rule'] | limitTo: 5">
+                                <td class="title">
+                                    <a ng-href="[{news.url}]">
+                                        <i class="fas fa-caret-square-right mr-1"></i>
+                                        [{news.title}]
+                                    </a>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
                 </div>
+                <!--資料下載-->
                 <div class="tab-pane fade" id="download" role="tabpanel" aria-labelledby="download-tab">
-                    DDD
+                    <table class="table table-hover">
+                        <tbody>
+                            <tr ng-repeat="news in Data['download'] | limitTo: 5">
+                                <td class="title">
+                                    <a ng-href="[{news.url}]">
+                                        <i class="fas fa-caret-square-right mr-1"></i>
+                                        [{news.title}]
+                                    </a>
+                                </td>
+                                <td class="date">[{news.date}]</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <div class="col-12 mt-4 Active">
+            <div class="mb-1 PlateTitle">
+                <h5>
+                    <i class="fas fa-calendar-alt mr-1"></i>
+                    活動成果
+                </h5>
+                <button class="mr-1 activePrev"><i class="fas fa-caret-square-left"></i></button>
+                <button class="activeNext"><i class="fas fa-caret-square-right"></i></button>
+            </div>
+            <div id="activeSlide" class="row">
+                <div ng-repeat="active in Data['active']" class="px-3">
+                    <img ng-src="[{active.img}]" class="img-fluid" alt="">
+                    <h6 ng-bind="active.title"></h6>
                 </div>
             </div>
         </div>
     </div>
+</div>
+<!--熱門服務-->
+<div class="mt-5 HotService">
+    555
+    <div class="container">3w1</div>
 </div>

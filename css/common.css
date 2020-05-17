@@ -6,7 +6,6 @@
 body {
     position: relative;
     width: 100%;
-    overflow: hidden;
 }
 button:focus {
     outline: 0;
@@ -84,11 +83,9 @@ header {
     border-bottom: 1px solid #fff;
     box-shadow: rgba(0,0,0,.5) 0 3px 8px -3px;
     position: fixed;
+    z-index: 100;
     width: 100%;
     text-align: center;
-}
-.page-container {
-    padding-top: 20px;
 }
 .HeaderWrapper {
     width: 100%;

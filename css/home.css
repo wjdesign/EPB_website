@@ -1,4 +1,14 @@
 /*首頁*/
+/*跑馬燈*/
+.Marquee {
+    background: #4b6957;
+    color: #fff;
+    height: 32px;
+    line-height: 32px;
+}
+.Marquee i {
+    font-size: 1rem;
+}
 /*輪播廣告*/
 .Carousel {
     position: relative;
@@ -84,4 +94,30 @@
     font-weight: bold;
     font-size: .7rem;
     text-align: right;
+}
+
+/*活動成果*/
+.Active .PlateTitle {
+    display: flex;
+    align-items: center;
+}
+.Active .PlateTitle h5 {
+    flex: 1;
+    margin-bottom: 0;
+}
+.Active .PlateTitle .slick-arrow {
+    border: 0;
+    font-size: 1.4rem;
+    color: #258476;
+    opacity: .6;
+    transition: opacity .2s;
+}
+.Active .PlateTitle .slick-arrow:hover {
+    opacity: 1;
+}
+
+/*熱門服務*/
+.HotService {
+    background: #eee;
+    height: 300px;
 }
