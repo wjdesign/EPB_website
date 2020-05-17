@@ -1,13 +1,12 @@
 /*首頁*/
 /*跑馬燈*/
 .Marquee {
-    background: #4b6957;
+    background: #333;
     color: #fff;
-    height: 32px;
-    line-height: 32px;
+    line-height: 1.6rem;
+    font-size: .8rem;
 }
 .Marquee i {
-    font-size: 1rem;
 }
 /*輪播廣告*/
 .Carousel {

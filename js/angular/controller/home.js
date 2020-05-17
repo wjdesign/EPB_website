@@ -20,7 +20,6 @@
         // 輪播廣告
         $scope.RunActive = function () {
             $(function () {
-                console.log($('#activeSlide'));
                 $('#activeSlide').slick({
                     slidesToShow: 3,
                     slidesToScroll: 3,

@@ -63,6 +63,9 @@
         top: 0;
         z-index: 49;
     }
+    .BodyWrapper {
+        padding-top: 76px;
+    }
     /*home*/
     .no-gutters .NewsList {
         padding-left: 0;

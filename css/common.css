@@ -77,6 +77,16 @@ button:focus {
 .lds-roller div:nth-child(8):after {top: 45px;left: 10px;}
 @keyframes lds-roller { 0% { transform: rotate(0deg); } 100% { transform: rotate(360deg); } }
 
+/*horizontal hr*/
+hr {
+    margin: 0 .7rem;
+    height: 1rem;
+    border: 0;
+    border-left: 1px solid rgba(255, 255, 255, .7);
+    display: inline-block;
+    vertical-align: bottom;
+}
+
 /*header*/
 header {
     background: #fefefe;
@@ -86,6 +96,20 @@ header {
     z-index: 100;
     width: 100%;
     text-align: center;
+}
+.ToolTipWrapper {
+    width: 100%;
+    background: #2f4e4a;
+}
+.ToolTipWrapper .ToolTip {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+.ToolTipWrapper .ToolTip a {
+    color: #fff;
+    font-size: .7rem;
+    padding: .25rem 0;
 }
 .HeaderWrapper {
     width: 100%;
@@ -111,20 +135,24 @@ header {
 }
 .HeaderWrapper .MenuWrapper ul {
     margin-bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
 }
 .HeaderWrapper .MenuWrapper ul li {
-    display: inline-block;
+    display: flex;
+    flex: 1;
 }
 .HeaderWrapper .MenuWrapper ul li .dropdown a,
 .HeaderWrapper .MenuWrapper ul li > a {
     color: #666;
     cursor: pointer;
-    display: block;
     font-size: 14px;
     text-align: center;
     text-decoration: none;
-    padding: 10px 20px;
+    padding: 0 1rem;
     transition: .3s;
+    white-space: nowrap;
 }
 .HeaderWrapper .MenuWrapper ul li:hover .dropdown a,
 .HeaderWrapper .MenuWrapper ul li:hover > a {
@@ -317,6 +345,6 @@ header {
 }
 
 .BodyWrapper {
-    padding-top: 77px;
+    padding-top: 105px;
     min-height: 800px;
 }
