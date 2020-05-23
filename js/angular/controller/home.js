@@ -17,14 +17,14 @@
             });
         };
 
-        // 輪播廣告
+        // 活動成果
         $scope.RunActive = function () {
             $(function () {
                 $('#activeSlide').slick({
                     slidesToShow: 3,
                     slidesToScroll: 3,
-                    autoplay: true,
-                    autoplaySpeed: 3500,
+                    autoplay: false,
+                    // autoplaySpeed: 3500,
                     dots: false,
                     prevArrow: $('.activePrev'),
                     nextArrow: $('.activeNext')

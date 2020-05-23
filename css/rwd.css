@@ -70,4 +70,8 @@
     .no-gutters .NewsList {
         padding-left: 0;
     }
+    .HotServiceWrapper .HotService li {
+        flex: 0 0 50%;
+        margin-bottom: 2rem;
+    }
 }

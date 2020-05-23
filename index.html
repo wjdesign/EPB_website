@@ -13,35 +13,40 @@
     <link rel="shortcut icon" href="images/favicon.ico"/>
     <link rel="bookmark" href="images/favicon.ico"/>
 
-    <link rel="stylesheet" href="css/all.min.css?ver20200516_72">
-    <link rel="stylesheet" href="css/bootstrap.min.css?ver20200516_72">
-    <link rel="stylesheet" href="css/slick.css?ver20200516_72">
-    <link rel="stylesheet" href="css/slick-theme.css?ver20200516_72">
-    <link rel="stylesheet" href="css/common.css?ver20200516_72">
-    <link rel="stylesheet" href="css/main.css?ver20200516_72">
-    <link rel="stylesheet" href="css/home.css?ver20200516_72">
-    <link rel="stylesheet" href="css/rwd.css?ver20200516_72">
+    <link rel="stylesheet" href="css/all.min.css?ver20200516_158">
+    <link rel="stylesheet" href="css/bootstrap.min.css?ver20200516_158">
+    <link rel="stylesheet" href="css/slick.css?ver20200516_158">
+    <link rel="stylesheet" href="css/slick-theme.css?ver20200516_158">
+    <link rel="stylesheet" href="css/common.css?ver20200516_158">
+    <link rel="stylesheet" href="css/main.css?ver20200516_158">
+    <link rel="stylesheet" href="css/home.css?ver20200516_158">
+    <link rel="stylesheet" href="css/rwd.css?ver20200516_158">
 
     <script>
-        var Version = '?ver20200516_72';   // 版本號
+        var Version = '?ver20200516_158';   // 版本號
     </script>
 
-    <script src="js/jquery-3.3.1.min.js?ver20200516_72"></script>
-    <script src="js/bootstrap.min.js?ver20200516_72"></script>
-    <script src="js/angular.min.js?ver20200516_72"></script>
-    <script src="js/angular/angular-ui-router.js?ver20200516_72"></script>
-    <script src="js/ui-bootstrap-tpls-2.0.0.min.js?ver20200516_72"></script>
-    <script src="js/slick.js?ver20200516_72"></script>
+    <script src="js/jquery-3.3.1.min.js?ver20200516_158"></script>
+    <script src="js/bootstrap.min.js?ver20200516_158"></script>
+    <script src="js/angular.min.js?ver20200516_158"></script>
+    <script src="js/angular/angular-ui-router.js?ver20200516_158"></script>
+    <script src="js/ui-bootstrap-tpls-2.0.0.min.js?ver20200516_158"></script>
+    <script src="js/angular-sanitize.js?ver20200516_158"></script>
+    <script src="js/slick.js?ver20200516_158"></script>
 
-    <script src="js/angular/config.js?ver20200516_72"></script>
-    <script src="js/angular/app.js?ver20200516_72"></script>
+    <script src="js/angular/config.js?ver20200516_158"></script>
+    <script src="js/angular/app.js?ver20200516_158"></script>
 
     <!--controller-->
-    <script src="js/angular/controller/main.js?ver20200516_72"></script>
-    <script src="js/angular/controller/home.js?ver20200516_72"></script>
-    <script src="js/angular/controller/about.js?ver20200516_72"></script>
+    <script src="js/angular/controller/main.js?ver20200516_158"></script>
+    <script src="js/angular/controller/home.js?ver20200516_158"></script>
+    <script src="js/angular/controller/about.js?ver20200516_158"></script>
+    <script src="js/angular/controller/qa.js?ver20200516_158"></script>
+    <script src="js/angular/controller/rule.js?ver20200516_158"></script>
+    <script src="js/angular/controller/news.js?ver20200516_158"></script>
+    <script src="js/angular/controller/download.js?ver20200516_158"></script>
 
-    <script src="js/data.js?ver20200516_72"></script>
+    <script src="js/data.js?ver20200516_158"></script>
 
     <title>台中市政府環境保護局環保志工網</title>
 </head>
@@ -61,6 +66,11 @@
                     <i class="mr-1 fas fa-network-wired"></i>
                     網站導覽
                 </a>
+                <hr>
+                <a class="btn">
+                    <i class="fab fa-envira"></i>
+                    環保局
+                </a>
             </div>
         </div>
         <div class="container">
@@ -71,22 +81,22 @@
                 <div class="MenuWrapper">
                     <ul>
                         <li ui-sref-active="{'active':'about'}">
-                            <a ui-sref="about"><i class="my-1 fab fa-microblog"></i>關於我們</a>
+                            <a ui-sref="about"><i class="my-1 fas fa-house-user"></i>關於我們</a>
                         </li>
                         <li>
-                            <a><i class="my-1 fas fa-bullhorn"></i>最新消息</a>
+                            <a ui-sref="news"><i class="my-1 fas fa-bullhorn"></i>最新消息</a>
                         </li>
                         <li>
                             <a><i class="my-1 fas fa-award"></i>活動成果</a>
                         </li>
                         <li>
-                            <a><i class="my-1 fas fa-question"></i>常見問答</a>
+                            <a ui-sref="qa"><i class="my-1 fas fa-question"></i>常見問答</a>
                         </li>
                         <li>
-                            <a><i class="my-1 fas fa-gavel"></i>相關法規</a>
+                            <a ui-sref="rule"><i class="my-1 fas fa-gavel"></i>相關法規</a>
                         </li>
                         <li>
-                            <a><i class="my-1 fas fa-cloud-download-alt"></i>資料下載</a>
+                            <a ui-sref="download"><i class="my-1 fas fa-cloud-download-alt"></i>資料下載</a>
                         </li>
                         <li>
                             <a><i class="my-1 fas fa-envelope-open-text"></i>與我聯絡</a>
@@ -121,6 +131,16 @@
     <div class="BodyWrapper">
         <div ui-view></div>
     </div>
-    <footer>copyright @ WJDesign [{CopyrightYear}]</footer>
+    <footer>
+        <div class="container">
+            <div class="row no-gutters">
+                <div class="col-12 text-center px-3 py-4 flex-sm-column">
+                    copyright @ WJDesign [{CopyrightYear}]
+                    <hr class="d-none d-md-inline-block">
+                    <p class="d-md-inline mb-0">請使用IE第10版以上、Chrome、FireFox、Edge、Safari瀏覽器瀏覽</p>
+                </div>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>

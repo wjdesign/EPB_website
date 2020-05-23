@@ -14,14 +14,14 @@ section {
 }
 
 footer {
-    position: fixed;
     width: 100%;
-    height: 32px;
-    bottom: 0;
-    left: 0;
-    right: 0;
     color: #fff;
-    background-color: #238678;
+    border-top: 1px solid #93bf6c;
+    background: #267d70;
+    background: -moz-linear-gradient(left, #267d70 0%, #a3ca6b 100%);
+    background: -webkit-linear-gradient(left, #267d70 0%,#a3ca6b 100%);
+    background: linear-gradient(to right, #267d70 0%,#a3ca6b 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#267d70', endColorstr='#a3ca6b',GradientType=1 );
     font-size: .5rem;
     display: flex;
     justify-content: center;

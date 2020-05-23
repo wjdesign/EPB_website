@@ -14,14 +14,6 @@ button:focus {
     height: 100vh;
     overflow-y: scroll;
 }
-@font-face{
-    font-family: OpenSans;
-    src: url('../fonts/OpenSans-Light.ttf');
-}
-@font-face{
-    font-family: OpenSans_Bold;
-    src: url('../fonts/OpenSans-Bold.ttf');
-}
 
 /*清除浮動*/
 .clearfix::before, .clearfix::after{ content: " ";display: table; }
@@ -55,7 +47,7 @@ button:focus {
 }
 
 /*Loading*/
-.Loading {position: absolute;top: 0;left: 0;bottom: 0;right: 0;width: 100%;height: 100vh;background: rgba(0, 0, 0, 0.5);z-index: 999;}
+.Loading {position: fixed;top: 0;left: 0;bottom: 0;right: 0;width: 100%;height: 100vh;background: rgba(0, 0, 0, 0.5);z-index: 999;}
 .lds-roller {display: inline-block;position: fixed;width: 64px;height: 64px;top: 45%;left: 50%;margin-left: -32px;}
 .lds-roller div {animation: lds-roller 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;transform-origin: 32px 32px;}
 .lds-roller div:after {content: " ";display: block;position: absolute;width: 6px;height: 6px;border-radius: 50%;background: #fff;margin: -3px 0 0 -3px;}
@@ -99,7 +91,11 @@ header {
 }
 .ToolTipWrapper {
     width: 100%;
-    background: #2f4e4a;
+    background: #2dab98;
+    background: -moz-linear-gradient(left,  #2dab98 0%, #3b4777 100%);
+    background: -webkit-linear-gradient(left,  #2dab98 0%,#3b4777 100%);
+    background: linear-gradient(to right, #2dab98 0%,#3b4777 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2dab98', endColorstr='#3b4777',GradientType=1 );
 }
 .ToolTipWrapper .ToolTip {
     display: flex;
@@ -346,5 +342,83 @@ header {
 
 .BodyWrapper {
     padding-top: 105px;
-    min-height: 800px;
+    min-height: 94vh;
+}
+
+/*麵包屑導覽列樣式*/
+.breadcrumb-item+.breadcrumb-item::before {
+    content: "/";
+}
+.BreadcrumbWrapper {
+}
+.BreadcrumbWrapper .breadcrumb {
+    background: transparent;
+}
+.BreadcrumbWrapper .breadcrumb li a {
+    color: #2caa97;
+}
+
+/*表格樣式*/
+.ListTableWrapper table th,
+.ListTableWrapper table td {
+    padding: .45rem;
+    vertical-align: text-top;
+    word-break: break-all;
+}
+.ListTableWrapper table.table .thead-dark th {
+    background: #446575;
+    border: #446575;
+}
+.ListTableWrapper table tr .Hash {
+    width: 3rem;
+}
+.ListTableWrapper table td.QuestTitle {
+    background: #d45252;
+}
+.ListTableWrapper table td.AnswerTitle {
+    background: #53b383;
+}
+.ListTableWrapper table td.ContentTitle,
+.ListTableWrapper table td.DownloadTitle,
+.ListTableWrapper table td.LinkTitle {
+    background: #798d84;
+}
+.ListTableWrapper table td.QuestContent {
+    background: #e8dada;
+}
+.ListTableWrapper table td.AnswerContent {
+    background: #cfe2d9;
+}
+.ListTableWrapper table td.Content {
+    background: #65756e;
+}
+.ListTableWrapper table td.DownloadContent,
+.ListTableWrapper table td.LinkContent {
+    background: #cfe3d9;
+}
+.ListTableWrapper table td .Link {
+    border: 2px dashed transparent;
+    color: #000;
+}
+.ListTableWrapper table td .Link:hover {
+    border: 2px dashed #ff9307;
+    color: #b15300;
+}
+
+/*頁數樣式*/
+.PageWrapper .NowPage {
+    font-size: .8rem;
+    color: #aaa;
+    letter-spacing: 1px;
+}
+.PageWrapper ul li a {
+    border-radius: 50em!important;
+    width: 2rem;
+    height: 2rem;
+    cursor: pointer;
+    text-align: center;
+}
+.PageWrapper ul .page-item.active .page-link {
+    background: #2caa97;
+    border: 1px solid #2caa97;
 }

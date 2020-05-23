@@ -1,7 +1,7 @@
 (function () {
     'use strict';
 
-    var app = angular.module('mainApp', ["ui.router", "ui.bootstrap"]);
+    var app = angular.module('mainApp', ["ui.router", "ui.bootstrap", "ngSanitize"]);
     app.config(['$interpolateProvider', function ($interpolateProvider) {
             $interpolateProvider.startSymbol('[{');
             $interpolateProvider.endSymbol('}]');
@@ -16,11 +16,35 @@
                 templateUrl: ('/EPB_website/html/home.html'+Version),
                 controller: 'homeCtrl'
             })
-            // 韓國快三
+            // 關於我們
             .state('about', {
                 url: '/about',
                 templateUrl: ('/EPB_website/html/about.html'+Version),
                 controller: 'aboutCtrl'
+            })
+            // 常見問答
+            .state('qa', {
+                url: '/qa',
+                templateUrl: ('/EPB_website/html/qa.html'+Version),
+                controller: 'qaCtrl'
+            })
+            // 相關法規
+            .state('rule', {
+                url: '/rule',
+                templateUrl: ('/EPB_website/html/rule.html'+Version),
+                controller: 'ruleCtrl'
+            })
+            // 最新消息
+            .state('news', {
+                url: '/news',
+                templateUrl: ('/EPB_website/html/news.html'+Version),
+                controller: 'newsCtrl'
+            })
+            // 資料下載
+            .state('download', {
+                url: '/download',
+                templateUrl: ('/EPB_website/html/download.html'+Version),
+                controller: 'downloadCtrl'
             })
 
     }).directive('closeCollapse', function() {
