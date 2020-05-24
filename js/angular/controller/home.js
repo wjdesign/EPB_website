@@ -27,8 +27,33 @@
                     // autoplaySpeed: 3500,
                     dots: false,
                     prevArrow: $('.activePrev'),
-                    nextArrow: $('.activeNext')
+                    nextArrow: $('.activeNext'),
+                    responsive: [
+                        {
+                            breakpoint: 1024,
+                            settings: {
+                                slidesToShow: 3,
+                                slidesToScroll: 3
+                            }
+                        },
+                        {
+                            breakpoint: 480,
+                            settings: {
+                                slidesToShow: 2,
+                                slidesToScroll: 2
+                            }
+                        }
+                    ]
                 });
+            });
+        };
+
+        // 生成QRCode
+        $scope.MakeQRCode = function () {
+            $('#QRCode').qrcode({
+                width: 100,
+                height: 100,
+                text: 'https://layout.wjdesign.cf/EPB_website/#/home'
             });
         };
 
@@ -39,6 +64,7 @@
             console.log('home');
             $scope.RunCarousel();
             $scope.RunActive();
+            $scope.MakeQRCode();
             $scope.$parent.CloseLoading();
         }
         Init();

@@ -112,8 +112,8 @@
                 <button class="activeNext"><i class="fas fa-caret-square-right"></i></button>
             </div>
             <div id="activeSlide" class="row">
-                <div ng-repeat="(id, active) in Data['active']" class="px-3">
-                    <a ui-sref="activity({'id': id})" class="text-decoration-none text-dark">
+                <div ng-repeat="(id, active) in Data['active']" class="px-3 SlideItem">
+                    <a ui-sref="activity({'id': id})" class="text-decoration-none text-dark d-block">
                         <img ng-src="[{active.img[0]}]" class="img-fluid" alt="">
                         <h6 ng-bind="active.title"></h6>
                     </a>
@@ -158,15 +158,88 @@
         </ul>
     </div>
 </div>
-<div class="MapWrapper">
+<div class="d-none d-md-block MapWrapper">
     <div class="container">
         <div class="row no-gutters">
-            <div class="col-12 flex-column TipPlate">
-                <ul>
-                    <li>辦公日期：政府行政機關辦公日曆表</li>
-                    <li>辦公時間：8:00-17:00，中午休息時間：12:00-13:00 ，彈性上下班時間：8:00-8:30、13:00-13:30、17:00-17:30</li>
-                    <li>請使用IE第10版以上、Chrome、FireFox、Edge、Safari瀏覽器瀏覽</li>
+            <div class="col-12 col-md-9 flex-column TipPlate">
+                <ul class="list-unstyled mb-0 d-flex flex-wrap MapList">
+                    <li class="text-center">
+                        認識我們
+                        <ul class="list-unstyled mb-0 mt-1">
+                            <li>
+                                <a ui-sref="about" class="btn btn-sm"><i class="mr-2 fas fa-location-arrow"></i>關於我們</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="text-center">
+                        活動專區
+                        <ul class="list-unstyled mb-0 mt-1">
+                            <li>
+                                <a ui-sref="activity({'id': ''})" class="btn btn-sm"><i class="mr-2 fas fa-location-arrow"></i>活動成果</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="text-center">
+                        常見Q&A
+                        <ul class="list-unstyled mb-0 mt-1">
+                            <li>
+                                <a ui-sref="qa" class="btn btn-sm"><i class="mr-2 fas fa-location-arrow"></i>常見問答</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="text-center">
+                        統計分析
+                        <ul class="list-unstyled mb-0 mt-1">
+                            <li>
+                                <a class="btn btn-sm"><i class="mr-2 fas fa-location-arrow"></i>統計分析</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="text-center">
+                        法規專區
+                        <ul class="list-unstyled mb-0 mt-1">
+                            <li>
+                                <a ui-sref="rule" class="btn btn-sm"><i class="mr-2 fas fa-location-arrow"></i>相關法規</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="text-center">
+                        下載專區
+                        <ul class="list-unstyled mb-0 mt-1">
+                            <li>
+                                <a ui-sref="download" class="btn btn-sm"><i class="mr-2 fas fa-location-arrow"></i>資料下載</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="text-center">
+                        訓練專區
+                        <ul class="list-unstyled mb-0 mt-1">
+                            <li>
+                                <a class="btn btn-sm"><i class="mr-2 fas fa-location-arrow"></i>志工訓練</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="text-center">
+                        招募訊息
+                        <ul class="list-unstyled mb-0 mt-1">
+                            <li>
+                                <a class="btn btn-sm"><i class="mr-2 fas fa-location-arrow"></i>招募訊息</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="text-center">
+                        時數查詢
+                        <ul class="list-unstyled mb-0 mt-1">
+                            <li>
+                                <a class="btn btn-sm"><i class="mr-2 fas fa-location-arrow"></i>時數查詢</a>
+                            </li>
+                        </ul>
+                    </li>
                 </ul>
+            </div>
+            <div class="px-3 col-12 col-md-3 d-none d-md-flex flex-column align-items-end justify-content-start">
+                <h5>本站QR碼</h5>
+                <div id="QRCode" class="p-3 d-flex justify-content-center align-items-center QRCode"></div>
             </div>
         </div>
     </div>

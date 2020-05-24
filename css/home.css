@@ -119,6 +119,23 @@
 .Active .PlateTitle .slick-arrow:hover {
     opacity: 1;
 }
+.Active .SlideItem a {
+    position: relative;
+}
+.Active .SlideItem h6 {
+    background: rgba(47, 117, 105, .8);
+    color: #fff;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    margin-bottom: 0;
+    padding: .5rem;
+    overflow : hidden;
+    text-overflow : ellipsis;
+    white-space : nowrap;
+}
 
 /*熱門服務*/
 .HotServiceWrapper {
@@ -167,9 +184,30 @@
     background: url(/EPB_website/images/tree.png?123) #9cb7b2 repeat-x center bottom;
     background-size: 50%;
     color: #fff;
-    padding: 5rem 0 10rem;
+    padding: 3rem 0 6rem;
     display: flex;
 }
+.MapWrapper .MapList > li {
+    flex: 0 0 20%;
+    height: 120px;
+    color: #546c68;
+}
+.MapWrapper .MapList > li a {
+    color: #fff;
+    cursor: pointer;
+    transition: background-color .2s;
+}
+.MapWrapper .MapList > li a:hover {
+    background: #2b7b6f;
+    color: #fff;
+}
+.MapWrapper .QRCode {
+    background: #fff;
+    width: 120px;
+    height: 120px;
+}
+
+/*footer工具*/
 .TipWrapper {
     background: #2a7c6f;
     border-bottom: 1px solid #17675b;
