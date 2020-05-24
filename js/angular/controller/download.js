@@ -6,7 +6,7 @@
 
         // 取得頁數
         $scope.GetTotalPage = function() {
-            $scope.TotalPage = 4;   // 總頁數
+            $scope.TotalPage = 3;   // 總頁數
             $scope.PageRange = [];
             for(let i=1;i<=$scope.TotalPage;i++) {
                 $scope.PageRange.push(i);

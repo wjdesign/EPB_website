@@ -22,6 +22,18 @@
                 templateUrl: ('/EPB_website/html/about.html'+Version),
                 controller: 'aboutCtrl'
             })
+            // 最新消息
+            .state('news', {
+                url: '/news',
+                templateUrl: ('/EPB_website/html/news.html'+Version),
+                controller: 'newsCtrl'
+            })
+            // 活動成果
+            .state('activity', {
+                url: '/activity/:id',
+                templateUrl: ('/EPB_website/html/activity.html'+Version),
+                controller: 'activityCtrl'
+            })
             // 常見問答
             .state('qa', {
                 url: '/qa',
@@ -34,17 +46,17 @@
                 templateUrl: ('/EPB_website/html/rule.html'+Version),
                 controller: 'ruleCtrl'
             })
-            // 最新消息
-            .state('news', {
-                url: '/news',
-                templateUrl: ('/EPB_website/html/news.html'+Version),
-                controller: 'newsCtrl'
-            })
             // 資料下載
             .state('download', {
                 url: '/download',
                 templateUrl: ('/EPB_website/html/download.html'+Version),
                 controller: 'downloadCtrl'
+            })
+            // 與我聯絡
+            .state('contact', {
+                url: '/contact',
+                templateUrl: ('/EPB_website/html/contact.html'+Version),
+                controller: 'contactCtrl'
             })
 
     }).directive('closeCollapse', function() {

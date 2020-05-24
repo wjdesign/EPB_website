@@ -357,6 +357,11 @@ header {
 .BreadcrumbWrapper .breadcrumb li a {
     color: #2caa97;
 }
+.BreadcrumbWrapper .breadcrumb li.active a {
+    color: #6c757d;
+    cursor: default;
+    text-decoration: none;
+}
 
 /*表格樣式*/
 .ListTableWrapper table th,
@@ -371,6 +376,9 @@ header {
 }
 .ListTableWrapper table tr .Hash {
     width: 3rem;
+}
+.ListTableWrapper table tr .ViewImg {
+    width: 5rem;
 }
 .ListTableWrapper table td.QuestTitle {
     background: #d45252;
@@ -404,6 +412,9 @@ header {
     border: 2px dashed #ff9307;
     color: #b15300;
 }
+.ContentWrapper .ContentTable {
+    font-size: .8rem;
+}
 
 /*頁數樣式*/
 .PageWrapper .NowPage {
@@ -421,4 +432,57 @@ header {
 .PageWrapper ul .page-item.active .page-link {
     background: #2caa97;
     border: 1px solid #2caa97;
+}
+
+/*活動內文樣式*/
+.ActivityContentWrapper .btnBack {
+    border: 1px solid #dee2e6;
+    color: #212529;
+    cursor: pointer;
+    height: 32px;
+    transition: .2s;
+}
+.ActivityContentWrapper .btnBack:hover {
+    background: #2caa97;
+    border-color: #2caa97;
+    color: #fff;
+}
+.ActivityContentWrapper table tr th {
+    background: #446575;
+    border: #446575;
+    color: #fff;
+    padding: .45rem .75rem;
+}
+.ActivityContentWrapper table tr ul.Date {
+    font-size: .7rem;
+    line-height: 1.4rem;
+}
+.ActivityContentWrapper .ActivityContent {
+    border-bottom: 1px solid #446475;
+}
+.ActivityContentWrapper .ActivityContent p:last-child {
+    margin-bottom: 0;
+}
+.lightbox-modal.in {
+    opacity: 1;
+}
+.ActivityContentWrapper .ActivityImgWrapper .ActivityImgList .ActivityImgItem {
+    flex: 1;
+    min-width: 120px;
+    max-width: 33.333%;
+}
+
+/*Form表單樣式*/
+.FormWrapper .Title {
+
+}
+.FormWrapper .Tips,
+.FormWrapper label i {
+    font-size: .7rem;
+}
+
+.BtnSubmit {
+    background: #2caa97;
+    border-color: #2caa97;
+    color: #fff;
 }

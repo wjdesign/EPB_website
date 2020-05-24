@@ -1,5 +1,5 @@
 <!--最新消息-->
-<div id="QA" class="container pt-4">
+<div id="News" class="container pt-4">
     <div class="BreadcrumbWrapper mb-0">
         <nav aria-label="breadcrumb" class="d-flex align-items-center">
             <span class="mb-0 mr-3">現在位置</span>
@@ -35,7 +35,7 @@
             <tr>
                 <th scope="col" class="Hash">#</th>
                 <th scope="col">標題</th>
-                <th scope="col">發布日期</th>
+                <th scope="col" class="d-none d-md-table-cell">發布日期</th>
             </tr>
             </thead>
             <tbody>
@@ -46,22 +46,22 @@
                     <button ng-if="value.content" class="btn btn-link btn-block text-left text-decoration-none px-3 py-0 Link" data-toggle="collapse" data-target="#collapseExample[{key}]">[{value.title}]</button>
                     <div class="collapse text-left px-3" id="collapseExample[{key}]">
                         <div class="table-responsive mt-3 ContentWrapper">
-                            <table class="table">
+                            <table class="table ContentTable">
                                 <tbody>
-                                <tr>
+                                <tr ng-if="value.content">
                                     <td class="text-center text-white ContentTitle">內容說明</td>
                                     <td class="text-left text-white Content" ng-bind-html="value.content"></td>
                                 </tr>
                                 <tr ng-if="value.file" ng-repeat="(i, file) in value.file">
                                     <td class="text-center text-white DownloadTitle">附件檔案 [{i+1}]</td>
                                     <td class="text-left DownloadContent">
-                                        <a ng-href="[{file.fileUrl}]" ng-bind="file.fileName || '-'"></a>
+                                        <a ng-href="[{file.fileUrl}]" ng-bind="file.fileName || '-'" target="_blank" title="[{file.fileName}](另開新視窗)"></a>
                                     </td>
                                 </tr>
                                 <tr ng-if="value.link" ng-repeat="(i, link) in value.link">
                                     <td class="text-center text-white LinkTitle">相關連結 [{i+1}]</td>
                                     <td class="text-left LinkContent">
-                                        <a ng-href="[{link.linkUrl}]" ng-bind="link.linkName || '-'"></a>
+                                        <a ng-href="[{link.linkUrl}]" ng-bind="link.linkName || '-'" target="_blank" title="[{link.linkName}](另開新視窗)"></a>
                                     </td>
                                 </tr>
                                 </tbody>
@@ -69,7 +69,7 @@
                         </div>
                     </div>
                 </td>
-                <td ng-bind="value.date"></td>
+                <td ng-bind="value.date" class="d-none d-md-table-cell"></td>
             </tr>
             </tbody>
         </table>

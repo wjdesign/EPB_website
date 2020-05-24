@@ -110,133 +110,219 @@ var Data = {
     ],
     "rule": [
         {
-            "url": "#",
+            "url": "/EPB_website/file/rule/志願服務獎勵辦法.pdf",
             "title": "志願服務獎勵辦法"
         },
         {
-            "url": "#",
+            "url": "/EPB_website/file/rule/臺中市志願服務獎勵辦法.pdf",
             "title": "臺中市志願服務獎勵辦法"
         },
         {
-            "url": "#",
+            "url": "/EPB_website/file/rule/志願服務證及服務紀錄冊管理辦法.pdf",
             "title": "志願服務證及服務紀錄冊管理辦法"
         },
         {
-            "url": "#",
+            "url": "/EPB_website/file/rule/臺中市政府環境保護志願服務計畫.pdf",
             "title": "臺中市政府環境保護志願服務計畫"
         },
         {
-            "url": "#",
+            "url": "/EPB_website/file/rule/志願服務法.pdf",
             "title": "志願服務法"
         }
     ],
     "download": [
         {
-            "url": "https://www.taichung.gov.tw/1478282/post",
-            "title": "台灣燈會環保志工滿意度奪冠 志工當貴賓觀禮",
-            "content": "",
-            "file": [],
-            "link": [],
-            "date": "2020/2/25"
-        },
-        {
-            "url": "https://www.taichung.gov.tw/1445048/post",
-            "title": "臺中清潔月，大家來拚厝",
-            "content": "",
-            "file": [],
-            "link": [],
-            "date": "2020/2/25"
-        },
-        {
-            "url": "#",
-            "title": "108年臺中市績優環保志工小隊評鑑結果出爐喔~",
-            "content": "108年臺中市績優環保志工小隊評鑑結果出爐喔~<br/>恭喜下列環保志工小隊~明年也請大家踴躍報名參加喔!",
-            "file": [
-                {
-                    "fileName": "108年度績優環保志工隊複核評鑑結果-132隊(含感謝隊伍).xlsx",
-                    "fileUrl": "https://ww2.epb.taichung.gov.tw/files/news/4/108%E5%B9%B4%E5%BA%A6%E7%B8%BE%E5%84%AA%E7%92%B0%E4%BF%9D%E5%BF%97%E5%B7%A5%E9%9A%8A%E8%A4%87%E6%A0%B8%E8%A9%95%E9%91%91%E7%B5%90%E6%9E%9C-132%E9%9A%8A(%E5%90%AB%E6%84%9F%E8%AC%9D%E9%9A%8A%E4%BC%8D).xlsx"
-                }
-            ],
-            "link": [],
-            "date": "2019/8/26"
-        },
-        {
             "url": "#",
             "title": "臺中市政府環境保護局志願服務計畫-108年6月12日修正",
-            "content": "臺中市政府環境保護局志願服務計畫-108年6月12日修正<br/>詳如附件",
-            "file": [
-                {
-                    "fileName": "108.6.12修正臺中市政府環境保護局志願服務計畫_.docx",
-                    "fileUrl": "https://ww2.epb.taichung.gov.tw/files/news/4/108.6.12%E4%BF%AE%E6%AD%A3%E8%87%BA%E4%B8%AD%E5%B8%82%E6%94%BF%E5%BA%9C%E7%92%B0%E5%A2%83%E4%BF%9D%E8%AD%B7%E5%B1%80%E5%BF%97%E9%A1%98%E6%9C%8D%E5%8B%99%E8%A8%88%E7%95%AB_.docx"
-                }
-            ],
-            "link": [],
-            "date": "2019/7/15"
-        },
-        {
-            "url": "http://faw.baphiq.gov.tw/",
-            "title": "通緝害蟲-秋行軍蟲",
             "content": "",
-            "file": [],
-            "link": [],
-            "date": "2019/7/4"
-        },
-        {
-            "url": "http://faw.baphiq.gov.tw/",
-            "title": "臺中市政府環境保護局志願服務計畫-108年6月12日修正",
-            "content": "臺中市政府環境保護局志願服務計畫-108年6月12日修正<br/>詳如附件",
             "file": [
                 {
-                    "fileName": "108.6.12修正臺中市政府環境保護局志願服務計畫_.docx",
-                    "fileUrl": "https://ww2.epb.taichung.gov.tw/files/news/4/108.6.12%E4%BF%AE%E6%AD%A3%E8%87%BA%E4%B8%AD%E5%B8%82%E6%94%BF%E5%BA%9C%E7%92%B0%E5%A2%83%E4%BF%9D%E8%AD%B7%E5%B1%80%E5%BF%97%E9%A1%98%E6%9C%8D%E5%8B%99%E8%A8%88%E7%95%AB_.docx"
+                    "fileName": "108.6.12修正臺中市政府環境保護局志願服務計畫_.pdf",
+                    "fileUrl": "https://ww2.epb.taichung.gov.tw/files/service2/108.6.12%E4%BF%AE%E6%AD%A3%E8%87%BA%E4%B8%AD%E5%B8%82%E6%94%BF%E5%BA%9C%E7%92%B0%E5%A2%83%E4%BF%9D%E8%AD%B7%E5%B1%80%E5%BF%97%E9%A1%98%E6%9C%8D%E5%8B%99%E8%A8%88%E7%95%AB_.pdf"
                 }
             ],
             "link": [],
             "date": "2019/6/13"
-        }
-    ],
-    "active": [
+        },
         {
             "url": "#",
-            "img": "/EPB_website/images/active/01.jpg",
+            "title": "108年度臺中市環保志（義）工群英會競賽初賽-資源分類王考題出處",
+            "content": "資源分類王考題出處源自環保署網頁:<br/>https://recycle.epa.gov.tw/epa/ShowPage2.aspx?key=5&sno=1009&subsno=21",
+            "file": [
+                {
+                    "fileName": "資源分類王題庫.pdf",
+                    "fileUrl": "https://ww2.epb.taichung.gov.tw/files/service2/%E8%B3%87%E6%BA%90%E5%88%86%E9%A1%9E%E7%8E%8B%E9%A1%8C%E5%BA%AB.pdf"
+                }
+            ],
+            "link": [
+                {
+                    "linkName": "https://recycle.epa.gov.tw/epa/ShowPage2.aspx?key=5&sno=1009&subsno=21",
+                    "linkUrl": "https://recycle.epa.gov.tw/epa/ShowPage2.aspx?key=5&sno=1009&subsno=21"
+                }
+            ],
+            "date": "2019/5/21"
+        },
+        {
+            "url": "#",
+            "title": "108年度臺中市環保志（義）工群英會競賽初賽-環保金頭腦、環境保衛戰題庫",
+            "content": "",
+            "file": [
+                {
+                    "fileName": "108年度臺中市環保志（義）工群英會競賽初賽-環保金頭腦、環境保衛戰題庫.pdf",
+                    "fileUrl": "https://ww2.epb.taichung.gov.tw/files/service2/108%E5%B9%B4%E5%BA%A6%E8%87%BA%E4%B8%AD%E5%B8%82%E7%92%B0%E4%BF%9D%E5%BF%97%EF%BC%88%E7%BE%A9%EF%BC%89%E5%B7%A5%E7%BE%A4%E8%8B%B1%E6%9C%83%E7%AB%B6%E8%B3%BD%E5%88%9D%E8%B3%BD-%E7%92%B0%E4%BF%9D%E9%87%91%E9%A0%AD%E8%85%A6%E3%80%81%E7%92%B0%E5%A2%83%E4%BF%9D%E8%A1%9B%E6%88%B0%E9%A1%8C%E5%BA%AB.pdf"
+                }
+            ],
+            "link": [],
+            "date": "2019/5/21"
+        },
+        {
+            "url": "#",
+            "title": "108年度臺中市環保志（義）工群英會競賽初賽規則",
+            "content": "",
+            "file": [
+                {
+                    "fileName": "108年度臺中市環保志（義）工群英會競賽初賽規則.pdf",
+                    "fileUrl": "https://ww2.epb.taichung.gov.tw/files/service2/108%E5%B9%B4%E5%BA%A6%E8%87%BA%E4%B8%AD%E5%B8%82%E7%92%B0%E4%BF%9D%E5%BF%97%EF%BC%88%E7%BE%A9%EF%BC%89%E5%B7%A5%E7%BE%A4%E8%8B%B1%E6%9C%83%E7%AB%B6%E8%B3%BD%E5%88%9D%E8%B3%BD%E8%A6%8F%E5%89%87.pdf"
+                }
+            ],
+            "link": [],
+            "date": "2019/5/13"
+        },
+        {
+            "url": "#",
+            "title": "108年度臺中市績優環保志工隊評鑑及獎勵實施計畫志工核銷(範例)資料",
+            "content": "",
+            "file": [
+                {
+                    "fileName": "108年度臺中市績優環保志工隊評鑑及獎勵實施計畫志工核銷(範例)資料.docx",
+                    "fileUrl": "https://ww2.epb.taichung.gov.tw/files/service2/108%E5%B9%B4%E5%BA%A6%E8%87%BA%E4%B8%AD%E5%B8%82%E7%B8%BE%E5%84%AA%E7%92%B0%E4%BF%9D%E5%BF%97%E5%B7%A5%E9%9A%8A%E8%A9%95%E9%91%91%E5%8F%8A%E7%8D%8E%E5%8B%B5%E5%AF%A6%E6%96%BD%E8%A8%88%E7%95%AB%E5%BF%97%E5%B7%A5%E6%A0%B8%E9%8A%B7(%E7%AF%84%E4%BE%8B)%E8%B3%87%E6%96%99.docx"
+                }
+            ],
+            "link": [],
+            "date": "2019/2/25"
+        },
+        {
+            "url": "#",
+            "title": "108年度臺中市績優環保志工隊評鑑及獎勵實施計畫-108.02.22訂定",
+            "content": "",
+            "file": [
+                {
+                    "fileName": "108年度臺中市績優環保志工隊評鑑及獎勵實施計畫-108.02.22訂定.docx",
+                    "fileUrl": "https://ww2.epb.taichung.gov.tw/files/service2/108%E5%B9%B4%E5%BA%A6%E8%87%BA%E4%B8%AD%E5%B8%82%E7%B8%BE%E5%84%AA%E7%92%B0%E4%BF%9D%E5%BF%97%E5%B7%A5%E9%9A%8A%E8%A9%95%E9%91%91%E5%8F%8A%E7%8D%8E%E5%8B%B5%E5%AF%A6%E6%96%BD%E8%A8%88%E7%95%AB-108.02.22%E8%A8%82%E5%AE%9A.docx"
+                },
+                {
+                    "fileName": "108年度臺中市績優環保志工隊評鑑及獎勵實施計畫公所初評評分表及志工隊檢核表.docx",
+                    "fileUrl": "https://ww2.epb.taichung.gov.tw/files/service2/108%E5%B9%B4%E5%BA%A6%E8%87%BA%E4%B8%AD%E5%B8%82%E7%B8%BE%E5%84%AA%E7%92%B0%E4%BF%9D%E5%BF%97%E5%B7%A5%E9%9A%8A%E8%A9%95%E9%91%91%E5%8F%8A%E7%8D%8E%E5%8B%B5%E5%AF%A6%E6%96%BD%E8%A8%88%E7%95%AB%E5%85%AC%E6%89%80%E5%88%9D%E8%A9%95%E8%A9%95%E5%88%86%E8%A1%A8%E5%8F%8A%E5%BF%97%E5%B7%A5%E9%9A%8A%E6%AA%A2%E6%A0%B8%E8%A1%A8.docx"
+                },
+                {
+                    "fileName": "108年度臺中市績優環保志工隊評鑑及獎勵實施計畫志工初核評鑑項目(範例)資料.docx",
+                    "fileUrl": "https://ww2.epb.taichung.gov.tw/files/service2/108%E5%B9%B4%E5%BA%A6%E8%87%BA%E4%B8%AD%E5%B8%82%E7%B8%BE%E5%84%AA%E7%92%B0%E4%BF%9D%E5%BF%97%E5%B7%A5%E9%9A%8A%E8%A9%95%E9%91%91%E5%8F%8A%E7%8D%8E%E5%8B%B5%E5%AF%A6%E6%96%BD%E8%A8%88%E7%95%AB%E5%BF%97%E5%B7%A5%E5%88%9D%E6%A0%B8%E8%A9%95%E9%91%91%E9%A0%85%E7%9B%AE(%E7%AF%84%E4%BE%8B)%E8%B3%87%E6%96%99.docx"
+                }
+            ],
+            "link": [],
+            "date": "2019/2/25"
+        }
+    ],
+    "active": {
+        "01": {
+            "url": "#/activity/01",
+            "view-img": "/EPB_website/images/active/01-01.jpg",
             "title": "台灣燈會環保志工滿意度奪冠 志工當貴賓觀禮",
+            "content":  "<p>2020台灣燈會將於今（23）日閉幕，昨晚舉辦「志工之夜」，台中市政府環保局邀請協助燈會環境清潔維護的300多位環保志工，從台下走上觀禮台，換個角度欣賞主燈秀及表演節目，因為他們的熱情服務與無私奉獻，環保志工在燈會主、副展區服務滿意度調查雙雙奪冠，備受肯定。</p>" +
+                        "<p>環保局說明，環保志工們服勤項目是環境巡檢維護，因賞燈遊客很有公德心，燈區環境相當乾淨，志工們便「自動轉型」為全方位服務，包含當起燈會「報馬仔」，主動引導賞燈的民眾準點觀看無人機展、燈王在哪裡、美食區哪裡最好吃、引導快速上廁所，更主動通報洗手乳沒了、廁所衛生紙需補充、垃圾桶該清理及宣導民眾勤洗手。</p>" +
+                        "<p>環保局提到，昨日環保志工之夜除了主燈秀燦爛，最「閃」的還有后里區墩東環保志工小隊的周真義先生與羅秀妹小姐，昨日正好是他們結婚60週年的鑽石婚紀念日。周先生表示，夫妻能結褵超過一甲子，真的不容易，而在這一天市政府邀請他們當燈會貴賓是最有意義的慶祝，也讓他覺得「當環保志工特別驕傲！」</p>" +
+                        "<p>https://www.youtube.com/watch?v=v5vjku0tRKc</p>",
+            "img": [
+                "/EPB_website/images/active/01-01.jpg",
+                "/EPB_website/images/active/01-02.jpg",
+                "/EPB_website/images/active/01-03.jpg"
+            ],
             "actiondate": "109/2/22",
             "update": "109/2/25"
         },
-        {
-            "url": "#",
-            "img": "/EPB_website/images/active/02.jpg",
+        "02": {
+            "url": "#/activity/02",
+            "view-img": "/EPB_website/images/active/02-01.jpg",
             "title": "臺中清潔月，大家來拚厝",
+            "content": "<p>市容整潔平時除仰賴清潔隊員努力，志工協助更是不可或缺的力量，北屯區仁美里環保志工隊今（4）日在隊長張煥陽帶隊下，不畏天寒，一早天未亮便拿起清掃工具打掃社區，除了清理落葉、菸蒂等垃圾外，也趁這次機會將多年未整理的髒亂點美化一番。</p>",
+            "img": [
+                "/EPB_website/images/active/02-01.jpg",
+                "/EPB_website/images/active/02-02.jpg",
+                "/EPB_website/images/active/02-03.jpg"
+            ],
             "actiondate": "109/1/4",
             "update": "109/1/6"
         },
-        {
-            "url": "#",
-            "img": "/EPB_website/images/active/03.jpg",
+        "03": {
+            "url": "#/activity/03",
+            "view-img": "/EPB_website/images/active/03-01.jpg",
             "title": "108年績優環保志工隊表揚大會",
+            "content":  "<p>台中市政府環境保護局為感謝環保志工無私付出，表揚120隊績優志工，其中東勢區下城里環保志工陳徐彩月高齡92歲，是這次最年長的獲獎志工，服務10多年，把掃街當運動，相當喜歡為社會服務。「施比受更有福！」市長盧秀燕表示，環保志工對台中的貢獻很大，她相信會有福報，市府會持續與志工們一起努力，讓台中更美好。</p>" +
+                        "<p>環保局今天在葳格國際會議中心舉行「108年績優環保志工隊表揚大會」，在120隊、共逾1,400位接受表揚的志工中，有28位平均年齡84歲的長青志工，盧市長頒獎表揚，並一一90度鞠躬，感謝他們活到老、貢獻到老的無私精神。</p>" +
+                        "<p>「有愛之人必有福！」盧市長表示，台中各類志工人數已突破11萬人，其中環保志工人數高達2萬5,868人，隊數也達到616隊，幾乎每一里都有一個志工隊。經統計，今年每天都有近2,000位志工出勤，而今年到目前道路清掃約2,250萬公尺，相當繞行台灣27圈。她也代表市府感謝所有志工對台中的貢獻，市府會持續與志工們共同努力，維護台中環境。</p>" +
+                        "<p>「掃街當運動，心情更美麗！」東勢區下城里環保志工陳徐彩月表示，志工工作包括掃街、拔草、種花、綠美化等，10多年來她每週固定做志工服務，從不缺席，透過種花、綠美化讓居住環境變漂亮，讓她很開心。</p>" +
+                        "<p>受表揚的120隊績優環保志工隊，是由環境領域專家學者與資深志工老師所組成評鑑團，經過書面審查與實地訪查後，從616隊中脫穎而出的優秀隊伍，這些優秀志工隊伍不論在志工出勤管理、環境維護、資源回收、綠美化等，都有相當好的表現。</p>",
+            "img": [
+                "/EPB_website/images/active/03-01.jpg",
+                "/EPB_website/images/active/03-02.jpg",
+                "/EPB_website/images/active/03-03.jpg",
+                "/EPB_website/images/active/03-04.jpg"
+            ],
             "actiondate": "108/11/3",
             "update": "108/11/3"
         },
-        {
-            "url": "#",
-            "img": "/EPB_website/images/active/04.jpg",
+        "04": {
+            "url": "#/activity/04",
+            "view-img": "/EPB_website/images/active/04-01.jpg",
             "title": "回收物品大變身！中市全國環保志工群英會勇奪2優勝",
+            "content":  "<p>全國環保志工群英會昨(26)日在雲林縣立體育館登場，共有來自全國22個縣市、近2千位志工代表齊聚一堂，展開趣味環境知識競技，台中市代表隊充份發揮團隊合作，勇奪「環保金頭腦」及「資源分類王」等2類競賽項目優勝，現場各縣市環保志工也發揮創意，將回收物品變成身上獨特裝扮，十分吸睛。</p>" +
+                        "<p>環保局表示，昨日全國環保志工群英會，由80位優秀環保志工所組成的台中代表隊均拿出渾身解數參賽，發揮環保創意與生活環保知識，其中，南區西川里環保志工隊組成的啦啦隊伍，利用家中回收物所組成道具、結合肢體語言的律動，展現經由志工的用心維護，讓原本髒亂的河川蛻變成為魚兒成群的清溪，吸引現場目光，而包括太平區中興里、大里區中新里、清水區下湳里環保志工隊也都認真投入，與各縣市環保志工精英一較高下，競賽現場緊張、刺激。</p>" +
+                        "<p>環保局長吳志超表示，目前台中市環保志工隊已有615隊、2萬5,818位志工，志工們長期努力與付出，完成推動資源回收、登革熱防治以及社區環境清潔等多項環保任務，全民有目共睹。今年台中志工代表隊犧牲休息時間集訓團練，但志工夥伴們精神與熱情仍不減，令人欽佩，並於競賽中發揮團隊合作精神，於「環保金頭腦」及「資源分類王」兩類競賽項目獲得優勝，證明了台中最美麗的風景是志工。</p>" +
+                        "<p>昨日全國環保志工群英會清水區長蔡慶生也特別現場為台中市代表隊打氣，加油團也高舉特別製作的燈會看板，高喊「環保志工、榮耀台中」展現團隊活力，也為「2020台灣燈會在台中」作宣傳，廣邀全國環保志工屆時來台中欣賞璀璨燈會。</p>" +
+                        "<p>出處臺中市政府全球資訊網:https://www.taichung.gov.tw/1396784/post</p>",
+            "img": [
+                "/EPB_website/images/active/04-01.jpg",
+                "/EPB_website/images/active/04-02.jpg",
+                "/EPB_website/images/active/04-03.jpg",
+                "/EPB_website/images/active/04-04.jpg",
+                "/EPB_website/images/active/04-05.jpg",
+                "/EPB_website/images/active/04-06.jpg"
+            ],
             "actiondate": "108/10/26",
             "update": "108/10/27"
         },
-        {
-            "url": "#",
-            "img": "/EPB_website/images/active/05.jpg",
+        "05": {
+            "url": "#/activity/05",
+            "view-img": "/EPB_website/images/active/05-01.jpg",
             "title": "我們準備好了！600名志工2020台灣燈會維護環境",
+            "content":  "<p>我們準備好了！2020台灣燈會即將到來，環保局召募約600名環保志工維護燈區環境，並於今(20)日完成燈區環境巡檢維護訓練，正式組成「環境維護組」，燈會期間將以垃圾不落地、資源回收、減碳生活等行動，留給賞燈的朋友們一個清潔、舒適的燈會印象。</p>" +
+                        "<p>為讓環保志工都能熟悉工作任務及服務內容，環保局今年度分區辦理3場次燈會教育訓練，於10月6日、10月19日與今日分別在豐原區、后里區與環保局辦理，參訓總人數計約600人。</p>" +
+                        "<p>環保局說，每一場次都有不同年齡層的志工熱情參與，透過講師生動又活潑的說明，讓參與訓練的志工們都能很快就認識燈區大小事，志工們也勤作筆記，紀錄志願服務的重點，講師與學員熱烈的互動，讓訓練課程增添許多歡笑，完訓後志工夥伴們拍起大合照，大聲說「我們準備好了！」，展現十足信心。</p>" +
+                        "<p>環保局長吳志超強調「2020台灣燈會在台中」，是繼台中花博後的一大城市盛事，除了600多位環保志工熱情投入燈會志工行列，也將廣邀社區居民踴躍加入，延續志工參與台中世界花博的熱情，共同成就「燈會志工，榮耀台中」。</p>",
+            "img": [
+                "/EPB_website/images/active/05-01.jpg",
+                "/EPB_website/images/active/05-02.jpg",
+                "/EPB_website/images/active/05-03.jpg",
+                "/EPB_website/images/active/05-04.jpg"
+            ],
             "actiondate": "108/10/20",
             "update": "108/10/20"
         },
-        {
-            "url": "#",
-            "img": "/EPB_website/images/active/06.jpg",
+        "06": {
+            "url": "#/activity/06",
+            "view-img": "/EPB_website/images/active/06-01.jpg",
             "title": "城市無名英雄！2020台灣燈會環保志工招募超過7成",
+            "content":  "<p>民間力量大！2020台灣燈會今年12月21日至明年2月23日在台中盛大登場，台中市政府環保局招募環保志工獲熱烈響應，名額650名已有500位民眾參加，報名人數超過7成。環保局今(6)日在豐原舉行首場教育訓練，讓志工提前熟悉工作任務及服務內容，盼藉民間力量，打造最美的台灣燈會。</p>" +
+                        "<p>環保局指出，今年台灣燈會移師台中后里森林、馬場園區及南屯文心森林公園等三處舉辦，是繼台中花博之後的一大盛會，尤其燈會展期長達65天，為打造舒適整潔的園區環境，環保局將舉行三場次環保志工教育訓練。</p>" +
+                        "<p>今日首場訓練在豐原登場，邀請台中市環境教育及樂齡核心講師陳梅玉老師帶領志工認識燈會展區、服務職責、出勤應注意事項等，並融入空汙防制及生廚餘回收等環境知識，內容豐富有趣，未來兩場將分別於10月19日上午10時在后里區內埔活動中心，以及10月20日下午2時在環保局中山廳舉辦。</p>" +
+                        "<p>環保局表示，不論平日或假日，大街小巷一大清早就可看到志工的身影，默默協助社區環境整理及資源回收工作，是維護市容不可或缺的助手，更是台中的無名英雄，台灣燈會即將到來，將打造更優質整潔的燈會環境。</p>",
+            "img": [
+                "/EPB_website/images/active/06-01.jpg",
+                "/EPB_website/images/active/06-02.jpg",
+                "/EPB_website/images/active/06-03.jpg"
+            ],
             "actiondate": "108/10/6",
             "update": "108/10/7"
         }
-    ]
+    }
 };

@@ -74,4 +74,7 @@
         flex: 0 0 50%;
         margin-bottom: 2rem;
     }
+    .FormWrapper .Title {
+        font-size: 1rem;
+    }
 }

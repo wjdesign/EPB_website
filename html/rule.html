@@ -1,5 +1,5 @@
 <!--相關法規-->
-<div id="QA" class="container pt-4">
+<div id="Rule" class="container pt-4">
     <div class="BreadcrumbWrapper mb-0">
         <nav aria-label="breadcrumb" class="d-flex align-items-center">
             <span class="mb-0 mr-3">現在位置</span>
@@ -41,7 +41,10 @@
             <tr ng-repeat="(key, value) in Data.rule">
                 <th scope="row">[{key}].</th>
                 <td>
-                    <a class="btn btn-link btn-block text-left text-decoration-none px-3 py-0 Link" ng-href="[{value.url}]" target="_blank" title="[{value.title}](另開新視窗)">[{value.title}]</a>
+                    <a class="btn btn-link btn-block text-left text-decoration-none px-3 py-0 Link" ng-href="[{value.url}]" target="_blank" title="[{value.title}](另開新視窗)">
+                        <i class="mr-1 fas fa-file-pdf"></i>
+                        [{value.title}]
+                    </a>
                 </td>
             </tr>
             </tbody>

@@ -44,7 +44,7 @@
                     <button class="btn btn-link btn-block text-left text-decoration-none px-3 py-0 Link" data-toggle="collapse" data-target="#collapseExample[{key}]">[{value.title}]</button>
                     <div class="collapse text-left px-3" id="collapseExample[{key}]">
                         <div class="table-responsive mt-3 ContentWrapper">
-                            <table class="table">
+                            <table class="table ContentTable">
                                 <tbody>
                                 <tr>
                                     <td class="text-center text-white QuestTitle">問</td>
@@ -52,7 +52,7 @@
                                 </tr>
                                 <tr>
                                     <td class="text-center text-white AnswerTitle">答</td>
-                                    <td class="text-left AnswerContent" ng-bind-html="value.answer"></td>
+                                    <td class="text-left AnswerContent" ng-bind-html="value.answer || '暫無回答'"></td>
                                 </tr>
                                 </tbody>
                             </table>

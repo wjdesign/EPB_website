@@ -112,9 +112,11 @@
                 <button class="activeNext"><i class="fas fa-caret-square-right"></i></button>
             </div>
             <div id="activeSlide" class="row">
-                <div ng-repeat="active in Data['active']" class="px-3">
-                    <img ng-src="[{active.img}]" class="img-fluid" alt="">
-                    <h6 ng-bind="active.title"></h6>
+                <div ng-repeat="(id, active) in Data['active']" class="px-3">
+                    <a ui-sref="activity({'id': id})" class="text-decoration-none text-dark">
+                        <img ng-src="[{active.img[0]}]" class="img-fluid" alt="">
+                        <h6 ng-bind="active.title"></h6>
+                    </a>
                 </div>
             </div>
         </div>
@@ -129,27 +131,27 @@
         </h5>
         <ul class="pb-4 mb-0 HotService">
             <li class="px-3">
-                <a>
+                <a ui-sref="news" class="text-decoration-none text-dark">
                     <i class="my-2 fas fa-bullhorn"></i>最新消息
                 </a>
             </li>
             <li class="px-3">
-                <a>
+                <a ui-sref="activity({'id': ''})" class="text-decoration-none text-dark">
                     <i class="my-2 fas fa-award"></i>活動成果
                 </a>
             </li>
             <li class="px-3">
-                <a>
+                <a ui-sref="qa" class="text-decoration-none text-dark">
                     <i class="my-2 fas fa-question"></i>常見問答
                 </a>
             </li>
             <li class="px-3">
-                <a>
+                <a ui-sref="rule" class="text-decoration-none text-dark">
                     <i class="my-2 fas fa-gavel"></i>相關法規
                 </a>
             </li>
             <li class="px-3">
-                <a>
+                <a ui-sref="download" class="text-decoration-none text-dark">
                     <i class="my-2 fas fa-cloud-download-alt"></i>資料下載
                 </a>
             </li>
