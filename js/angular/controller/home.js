@@ -60,6 +60,7 @@
         // Init
         function Init() {
             $scope.$parent.ShowLoading();
+            $scope.$parent.GoTop(); // 滾動至頁頂
             $scope.Data = Data;     // 取得data.js的假資料
             // console.log('home');
             $scope.RunCarousel();

@@ -46,6 +46,7 @@
         // Init
         function Init() {
             $scope.ShowLoading();
+            $scope.GoTop();
             // console.log('main');
             $scope.CloseLoading();
         }
