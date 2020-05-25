@@ -21,6 +21,13 @@
             },500);
         };
 
+        // 滾動頁頂
+        $scope.GoTop = function () {
+            $('html,body').animate({
+                scrollTop: 0
+            }, 350);
+        };
+
         // Mobile版漢堡盒動畫
         angular.element(".ShowMenu").on("click", function () {
             $('.animated-icon').stop().toggleClass('open');
@@ -38,9 +45,9 @@
 
         // Init
         function Init() {
-            // $scope.ShowLoading();
-            console.log('main');
-            // $scope.CloseLoading();
+            $scope.ShowLoading();
+            // console.log('main');
+            $scope.CloseLoading();
         }
         Init();
     }

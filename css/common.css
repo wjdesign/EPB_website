@@ -46,6 +46,14 @@ button:focus {
     background-color: #555;
 }
 
+.text-grey {
+    color: #999;
+}
+
+.list-style-none {
+    list-style: none;
+}
+
 /*Loading*/
 .Loading {position: fixed;top: 0;left: 0;bottom: 0;right: 0;width: 100%;height: 100vh;background: rgba(0, 0, 0, 0.5);z-index: 999;}
 .lds-roller {display: inline-block;position: fixed;width: 64px;height: 64px;top: 45%;left: 50%;margin-left: -32px;}
@@ -481,8 +489,93 @@ header {
     font-size: .7rem;
 }
 
+/*按鈕樣式*/
 .BtnSubmit {
     background: #2caa97;
     border-color: #2caa97;
+    color: #fff;
+}
+.BtnMore {
+    background: transparent;
+    border-color: #556d69;
+    border-radius: 50em;
+    color: #556d69;
+    cursor: pointer;
+    padding: .2rem .6rem;
+    font-size: 12px;
+    transition: .2s;
+}
+.BtnMore:hover {
+    background: #556d69;
+    color: #fff;
+}
+.BtnGov {
+    background-color: #f8f9fa;
+    border-color: #f8f9fa;
+    color: #212529;
+    cursor: pointer;
+}
+.BtnGov:hover {
+    background-color: #e2e6ea;
+    border-color: #dae0e5;
+}
+
+/*文章樣式*/
+.ArticleTitle {
+    border-bottom: 5px solid #446575;
+}
+.ArticleTitle h6,
+.ArticleContent h6 {
+    font-size: .8rem;
+}
+.ArticleContent ul li,
+.ArticleContent ol li {
+    transition: .2s;
+    padding: .3rem;
+}
+.ArticleContent ul li:hover,
+.ArticleContent ol li:hover {
+    background: #fffcd7;
+}
+.PubInfo {
+    margin: 2rem auto;
+    border: 1px dashed #aa9;
+    padding: 1.2em .6em;
+    clear: both;
+    color: #212529;
+    background: transparent;
+    border-radius: 10px;
+    text-align: center;
+}
+
+/*網站導覽*/
+.WebMap {
+    background: #9cb7b2;
+    border-radius: 1rem;
+    color: #fff;
+    padding: 2rem 0;
+}
+.WebMap > div {
+    flex: 0 0 25%;
+    height: 160px;
+    padding: 0 2rem;
+}
+.WebMap h4 {
+    font-size: 1rem;
+    border-bottom: 3px solid #60807a;
+    padding-bottom: .5rem;
+    margin-bottom: .5rem;
+    color: #45635d;
+}
+.WebMap ul li {
+    border-radius: 5px;
+}
+.WebMap ul li a {
+    color: #333;
+}
+.WebMap ul li:hover {
+    background: #5e9087;
+}
+.WebMap ul li:hover a {
     color: #fff;
 }

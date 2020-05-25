@@ -30,7 +30,7 @@
         function Init() {
             $scope.$parent.ShowLoading();
             $scope.GetTotalPage();  // 取得頁數
-            console.log('contact');
+            // console.log('contact');
             $scope.$parent.CloseLoading();
         }
         Init();

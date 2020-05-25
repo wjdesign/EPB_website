@@ -53,10 +53,13 @@
                             </tr>
                         </tbody>
                     </table>
+                    <div class="px-3 d-flex align-items-center justify-content-end">
+                        <a class="btn btn-sm BtnMore" ui-sref="news">更多<i class="ml-2 fas fa-angle-double-right"></i></a>
+                    </div>
                 </div>
                 <!--常見問答-->
                 <div class="tab-pane fade" id="tabs-qa" role="tabpanel" aria-labelledby="qa-tab">
-                    <table class="table table-hover">
+                    <table class="mb-0 table table-hover">
                         <tbody>
                             <tr ng-repeat="news in Data['qa'] | limitTo: 5">
                                 <td class="title">
@@ -68,10 +71,13 @@
                             </tr>
                         </tbody>
                     </table>
+                    <div class="px-3 d-flex align-items-center justify-content-end">
+                        <a class="btn btn-sm BtnMore" ui-sref="qa">更多<i class="ml-2 fas fa-angle-double-right"></i></a>
+                    </div>
                 </div>
                 <!--相關法規-->
                 <div class="tab-pane fade" id="tabs-rule" role="tabpanel" aria-labelledby="rule-tab">
-                    <table class="table table-hover">
+                    <table class="mb-0 table table-hover">
                         <tbody>
                             <tr ng-repeat="news in Data['rule'] | limitTo: 5">
                                 <td class="title">
@@ -83,10 +89,13 @@
                             </tr>
                         </tbody>
                     </table>
+                    <div class="px-3 d-flex align-items-center justify-content-end">
+                        <a class="btn btn-sm BtnMore" ui-sref="rule">更多<i class="ml-2 fas fa-angle-double-right"></i></a>
+                    </div>
                 </div>
                 <!--資料下載-->
                 <div class="tab-pane fade" id="tabs-download" role="tabpanel" aria-labelledby="download-tab">
-                    <table class="table table-hover">
+                    <table class="mb-0 table table-hover">
                         <tbody>
                             <tr ng-repeat="news in Data['download'] | limitTo: 5">
                                 <td class="title">
@@ -99,12 +108,15 @@
                             </tr>
                         </tbody>
                     </table>
+                    <div class="px-3 d-flex align-items-center justify-content-end">
+                        <a class="btn btn-sm BtnMore" ui-sref="download">更多<i class="ml-2 fas fa-angle-double-right"></i></a>
+                    </div>
                 </div>
             </div>
         </div>
         <div class="col-12 mt-4 Active">
             <div class="mb-1 PlateTitle">
-                <h5>
+                <h5 class="pl-0 pl-md-2">
                     <i class="fas fa-calendar-alt mr-1"></i>
                     活動成果
                 </h5>
@@ -164,7 +176,7 @@
             <div class="col-12 col-md-9 flex-column TipPlate">
                 <ul class="list-unstyled mb-0 d-flex flex-wrap MapList">
                     <li class="text-center">
-                        認識我們
+                        <i class="mr-2 fas fa-hashtag"></i>認識我們
                         <ul class="list-unstyled mb-0 mt-1">
                             <li>
                                 <a ui-sref="about" class="btn btn-sm"><i class="mr-2 fas fa-location-arrow"></i>關於我們</a>
@@ -172,7 +184,7 @@
                         </ul>
                     </li>
                     <li class="text-center">
-                        活動專區
+                        <i class="mr-2 fas fa-hashtag"></i>活動專區
                         <ul class="list-unstyled mb-0 mt-1">
                             <li>
                                 <a ui-sref="activity({'id': ''})" class="btn btn-sm"><i class="mr-2 fas fa-location-arrow"></i>活動成果</a>
@@ -180,7 +192,7 @@
                         </ul>
                     </li>
                     <li class="text-center">
-                        常見Q&A
+                        <i class="mr-2 fas fa-hashtag"></i>常見Q&A
                         <ul class="list-unstyled mb-0 mt-1">
                             <li>
                                 <a ui-sref="qa" class="btn btn-sm"><i class="mr-2 fas fa-location-arrow"></i>常見問答</a>
@@ -188,7 +200,7 @@
                         </ul>
                     </li>
                     <li class="text-center">
-                        統計分析
+                        <i class="mr-2 fas fa-hashtag"></i>統計分析
                         <ul class="list-unstyled mb-0 mt-1">
                             <li>
                                 <a class="btn btn-sm"><i class="mr-2 fas fa-location-arrow"></i>統計分析</a>
@@ -196,7 +208,7 @@
                         </ul>
                     </li>
                     <li class="text-center">
-                        法規專區
+                        <i class="mr-2 fas fa-hashtag"></i>法規專區
                         <ul class="list-unstyled mb-0 mt-1">
                             <li>
                                 <a ui-sref="rule" class="btn btn-sm"><i class="mr-2 fas fa-location-arrow"></i>相關法規</a>
@@ -204,7 +216,7 @@
                         </ul>
                     </li>
                     <li class="text-center">
-                        下載專區
+                        <i class="mr-2 fas fa-hashtag"></i>下載專區
                         <ul class="list-unstyled mb-0 mt-1">
                             <li>
                                 <a ui-sref="download" class="btn btn-sm"><i class="mr-2 fas fa-location-arrow"></i>資料下載</a>
@@ -212,23 +224,7 @@
                         </ul>
                     </li>
                     <li class="text-center">
-                        訓練專區
-                        <ul class="list-unstyled mb-0 mt-1">
-                            <li>
-                                <a class="btn btn-sm"><i class="mr-2 fas fa-location-arrow"></i>志工訓練</a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li class="text-center">
-                        招募訊息
-                        <ul class="list-unstyled mb-0 mt-1">
-                            <li>
-                                <a class="btn btn-sm"><i class="mr-2 fas fa-location-arrow"></i>招募訊息</a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li class="text-center">
-                        時數查詢
+                        <i class="mr-2 fas fa-hashtag"></i>時數查詢
                         <ul class="list-unstyled mb-0 mt-1">
                             <li>
                                 <a class="btn btn-sm"><i class="mr-2 fas fa-location-arrow"></i>時數查詢</a>
@@ -250,13 +246,13 @@
             <div class="col-sm-12 col-md-8 flex-column py-5 TipPlate">
                 <ul class="pl-0 mb-0">
                     <li class="mb-1">
-                        <a class="btn btn-sm btn-light mr-3 mb-3" href="">
+                        <a class="btn btn-sm btn-light mr-3 mb-3 BtnGov" ui-sref="announcement" ng-click="GoTop()">
                             <i class="fas fa-book mr-2"></i>政府網站資料開放宣告
                         </a>
-                        <a class="btn btn-sm btn-light mr-3 mb-3" href="">
+                        <a class="btn btn-sm btn-light mr-3 mb-3 BtnGov" ui-sref="safe" ng-click="GoTop()">
                             <i class="fas fa-journal-whills mr-2"></i>資訊安全政策
                         </a>
-                        <a class="btn btn-sm btn-light mr-3 mb-3" href="">
+                        <a class="btn btn-sm btn-light mr-3 mb-3 BtnGov" ui-sref="secure" ng-click="GoTop()">
                             <i class="fas fa-atlas mr-2"></i>隱私權政策
                         </a>
                     </li>

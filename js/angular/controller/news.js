@@ -31,7 +31,7 @@
             $scope.$parent.ShowLoading();
             $scope.Data = Data;     // 取得data.js的假資料
             $scope.GetTotalPage();  // 取得頁數
-            console.log('news');
+            // console.log('news');
             $scope.$parent.CloseLoading();
         }
         Init();

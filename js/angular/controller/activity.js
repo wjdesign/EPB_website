@@ -31,7 +31,7 @@
             $scope.$parent.ShowLoading();
             $scope.Data = Data;     // 取得data.js的假資料
             $scope.GetTotalPage();  // 取得頁數
-            console.log('activity');
+            // console.log('activity');
             $scope.ActivityID = $stateParams.id;    // 由動態路由取得活動ID
             $scope.$parent.CloseLoading();
         }

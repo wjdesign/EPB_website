@@ -58,6 +58,26 @@
                 templateUrl: ('/EPB_website/html/contact.html'+Version),
                 controller: 'contactCtrl'
             })
+            // 政府網站資料開放宣告
+            .state('announcement', {
+                url: '/announcement',
+                templateUrl: ('/EPB_website/html/announcement.html'+Version)
+            })
+            // 資訊安全政策
+            .state('safe', {
+                url: '/safe',
+                templateUrl: ('/EPB_website/html/safe.html'+Version)
+            })
+            // 隱私權政策
+            .state('secure', {
+                url: '/secure',
+                templateUrl: ('/EPB_website/html/secure.html'+Version)
+            })
+            // 網站導覽
+            .state('map', {
+                url: '/map',
+                templateUrl: ('/EPB_website/html/map.html'+Version)
+            })
 
     }).directive('closeCollapse', function() {
         // Mobile版關閉漢堡盒

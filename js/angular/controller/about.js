@@ -7,7 +7,7 @@
         // Init
         function Init() {
             $scope.$parent.ShowLoading();
-            console.log('about');
+            // console.log('about');
             $scope.$parent.CloseLoading();
         }
         Init();

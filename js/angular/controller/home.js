@@ -61,7 +61,7 @@
         function Init() {
             $scope.$parent.ShowLoading();
             $scope.Data = Data;     // 取得data.js的假資料
-            console.log('home');
+            // console.log('home');
             $scope.RunCarousel();
             $scope.RunActive();
             $scope.MakeQRCode();

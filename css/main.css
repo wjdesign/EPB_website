@@ -18,10 +18,10 @@ footer {
     color: #fff;
     border-top: 1px solid #93bf6c;
     background: #267d70;
-    background: -moz-linear-gradient(left, #267d70 0%, #a3ca6b 100%);
-    background: -webkit-linear-gradient(left, #267d70 0%,#a3ca6b 100%);
-    background: linear-gradient(to right, #267d70 0%,#a3ca6b 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#267d70', endColorstr='#a3ca6b',GradientType=1 );
+    background: -moz-linear-gradient(left, #267d70 0%, #75af68 100%);
+    background: -webkit-linear-gradient(left, #267d70 0%,#75af68 100%);
+    background: linear-gradient(to right, #267d70 0%,#75af68 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#267d70', endColorstr='#75af68',GradientType=1 );
     font-size: .5rem;
     display: flex;
     justify-content: center;

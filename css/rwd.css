@@ -1,5 +1,13 @@
 @charset "UTF-8";
+
+
+@media (min-width: 1200px) {
+    .container {
+        width: 1000px;
+    }
+}
 @media (max-width: 768px) {
+    /*common*/
     *::-webkit-scrollbar-track,
     * *::-webkit-scrollbar-track {
         -webkit-box-shadow: initial;
@@ -18,15 +26,6 @@
         -webkit-box-shadow: initial;
         background-color: initial;
     }
-}
-
-
-@media (min-width: 1200px) {
-    .container {
-        width: 1000px;
-    }
-}
-@media (max-width: 768px) {
     /*main*/
     #WebHeader {
         display: none;
@@ -76,5 +75,18 @@
     }
     .FormWrapper .Title {
         font-size: 1rem;
+    }
+    .WebMap > div {
+        min-width: 50%;
+    }
+}
+@media (max-width: 320px) {
+    .MobileHeaderWrapper .LogoWrapper .Logo {
+        width: 180px;
+        height: 50px;
+    }
+    .MobileHeaderWrapper .ShowMenu {
+        top: 12px;
+        right: 12px;
     }
 }
