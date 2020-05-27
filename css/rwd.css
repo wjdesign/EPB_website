@@ -79,6 +79,10 @@
     .WebMap > div {
         min-width: 50%;
     }
+    /*about*/
+    .PlanTable {
+        white-space: nowrap;
+    }
 }
 @media (max-width: 320px) {
     .MobileHeaderWrapper .LogoWrapper .Logo {

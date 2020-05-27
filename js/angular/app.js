@@ -22,6 +22,16 @@
                 templateUrl: ('/EPB_website/html/about.html'+Version),
                 controller: 'aboutCtrl'
             })
+            // 各區環保志工隊
+            .state('about.team', {
+                url: '/team/{area}',
+                templateUrl: ('/EPB_website/html/team.html'+Version)
+            })
+            // 各環保志工服務計畫
+            .state('about.plan', {
+                url: '/plan/{area}',
+                templateUrl: ('/EPB_website/html/plan.html'+Version)
+            })
             // 最新消息
             .state('news', {
                 url: '/news',

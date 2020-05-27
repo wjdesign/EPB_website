@@ -160,11 +160,11 @@ header {
 }
 .HeaderWrapper .MenuWrapper ul li:hover .dropdown a,
 .HeaderWrapper .MenuWrapper ul li:hover > a {
-    color: #f1a2a2;
+    color: #deb490;
 }
 .HeaderWrapper .MenuWrapper ul li.active .dropdown a,
 .HeaderWrapper .MenuWrapper ul li.active > a {
-    color: #ff5d5d;
+    color: #f59a4b;
 }
 .HeaderWrapper .MenuWrapper ul li .dropdown a i,
 .HeaderWrapper .MenuWrapper ul li > a i {
@@ -317,10 +317,10 @@ header {
     color: #fff;
 }
 .MobileHeaderWrapper .MenuWrapper > ul > li.active {
-    background: #54b9aa;
+    background: #f59a4b;
 }
 .MobileHeaderWrapper .MenuWrapper > ul > li.active > a {
-    color: #ffed00;
+    color: #fff;
 }
 .MobileHeaderWrapper .MenuWrapper > ul > li > a i {
     margin-right: 8px;
@@ -362,9 +362,11 @@ header {
 .BreadcrumbWrapper .breadcrumb {
     background: transparent;
 }
+.BreadcrumbWrapper .breadcrumb li i,
 .BreadcrumbWrapper .breadcrumb li a {
     color: #2caa97;
 }
+.BreadcrumbWrapper .breadcrumb li.active i,
 .BreadcrumbWrapper .breadcrumb li.active a {
     color: #6c757d;
     cursor: default;
@@ -422,6 +424,14 @@ header {
 }
 .ContentWrapper .ContentTable {
     font-size: .8rem;
+}
+.ListTableWrapper table td.NoData {
+    line-height: 10rem
+}
+/*志工服務計畫表格樣式*/
+.ListTableWrapper table.PlanTable th,
+.ListTableWrapper table.PlanTable td {
+    vertical-align: middle;
 }
 
 /*頁數樣式*/
@@ -519,6 +529,13 @@ header {
     background-color: #e2e6ea;
     border-color: #dae0e5;
 }
+.BtnSearch {
+    background: #2caa97;
+    color: #fff;
+}
+.BtnSearch:hover {
+    color: #fff;
+}
 
 /*文章樣式*/
 .ArticleTitle {
@@ -578,4 +595,14 @@ header {
 }
 .WebMap ul li:hover a {
     color: #fff;
+}
+
+/*關於我們*/
+.SelectArea {
+    flex: 1;
+}
+.AboutNav a {
+    background: #becbd2;
+    color: #fff;
+    transition: .2s;
 }
